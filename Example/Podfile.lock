@@ -1,0 +1,16 @@
+PODS:
+  - LKFoundation (0.1.0)
+
+DEPENDENCIES:
+  - LKFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  LKFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LKFoundation: 30ef629d95782c697f9e29ee3d5bb221337c833c
+
+PODFILE CHECKSUM: c646a2f08c408ad380981eabb2e1fe13ae9de418
+
+COCOAPODS: 1.10.0
