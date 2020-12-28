@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+#import <LKFoundation/LKFoundation.h>
 
 @interface Tests : XCTestCase
 
@@ -26,9 +27,19 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testDebugLogWithSingleArgs
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    LKLog(@"test %@ LogWithSingleArgs", @"debug");
+}
+
+- (void)testDebugLogWithoutArgs
+{
+    LKLog(@"testDebugLogWithoutArgs");
+}
+
+- (void)testErrorLog
+{
+    LKLogError(@"TestChannel", @"350", @"error msg %@", @"ok");
 }
 
 @end
