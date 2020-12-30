@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (LKFoundation)
 
 - (nullable NSString *)lk_md5String;
+- (nullable NSString *)lk_capitalizeFirstLetter;
 
 @end
 
